@@ -27,3 +27,34 @@ a {
 img {
   display: block;
 }
+
+.movie-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.movie-cards-buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-cards-button {
+  margin: 16px;
+  font-size: 16px;
+  padding: 5px 8px;
+  background-color: #000;
+  border: 2px solid #01b4e4;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.movie-cards-button:disabled {
+  opacity: 0.5;
+}
+
+.page-title {
+  font-size: 32px;
+  margin: 16px 32px;
+}

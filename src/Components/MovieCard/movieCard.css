@@ -1,6 +1,7 @@
 .movie-card-container {
   width: 150px;
   margin: 22px 16px;
+  overflow: hidden;
 }
 
 .movie-card-img-container {
