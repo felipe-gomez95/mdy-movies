@@ -28,7 +28,7 @@ function Header() {
         }}
         className="menu-trigger"
       >
-        <i className="fas fa-bars"></i>
+        <i className="fa-solid fa-bars"></i>
       </button>
       <nav className={`header-menu ${menuActive ? "header-menu--active" : ""}`}>
         <button
@@ -45,13 +45,25 @@ function Header() {
               key={genre.id}
               className="header-menu-item"
               to={`/genero/${genre.name}/${genre.id}`}
+              onClick={function () {
+                setMenuActive(false);
+              }}
             >
               {genre.name}
             </Link>
           );
         })}
       </nav>
+      <div
+        className={`overlay ${menuActive ? "overlay--show" : ""}`}
+        onClick={function () {
+          setMenuActive(false);
+        }}
+      ></div>
       <SearchBar />
+      <Link to="/login" className="login-link">
+        <i className="fa-solid fa-user"></i> ACCEDER
+      </Link>
       <Link to="/">
         <img className="header-logo" src={logo} alt="" />
       </Link>

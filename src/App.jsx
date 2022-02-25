@@ -4,6 +4,7 @@ import Header from "./Components/Header/header";
 import GenrePage from "./Pages/GenrePage/genrePage";
 import SearchPage from "./Pages/SearchPage/searchPage";
 import MovieDetailPage from "./Pages/MovieDetailPage/movieDetailPage";
+import LoginPage from "./Pages/loginPage/loginPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/search/:search" element={<SearchPage />} />
         <Route path="/pelicula/:movieId" element={<MovieDetailPage />} />
         <Route path="/genero/:genreName/:genreId" element={<GenrePage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
